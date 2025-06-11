@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  color: #e0dada;
+  font-family: 'UnifrakturCook', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#game {
+  border: 4px double #744747;
+  background: #111;
+  box-shadow: 0 0 15px #aa00ff;
+  display: none;
+}
+
+#startButton {
+  padding: 20px 40px;
+  font-size: 24px;
+  cursor: pointer;
+  background: #2a2a2a;
+  color: #e0dada;
+  border: 2px solid #aa00ff;
+  border-radius: 8px;
+  user-select: none;
+  font-family: 'UnifrakturCook', cursive;
+  box-shadow: 0 0 10px #aa00ff;
+  transition: background 0.3s, color 0.3s;
+}
+
+#startButton:hover {
+  background: #aa00ff;
+  color: #0f0f0f;
+}
+
+canvas {
+  image-rendering: pixelated;
+}

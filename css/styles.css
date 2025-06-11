@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background:
+        #1a1a1a url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
+    color: #f0e6d2;
+    font-family: 'UnifrakturCook', cursive, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px 60px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #d3b97d;
+    text-shadow: 3px 3px 8px #3e3000;
+    margin-bottom: 50px;
+    user-select: none;
+}
+
+/* Menú horizontal gótico */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #d3b97d;
+    border: 3px solid #d3b97d;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: #3e3000;
+    box-shadow: 0 0 15px #7a5e0e;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease;
+    user-select: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav a svg {
+    fill: #d3b97d;
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #d3b97d;
+    color: #1a1a1a;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #f9e06c;
+    outline: none;
+}
+
+nav a:hover svg,
+nav a:focus svg {
+    transform: rotate(15deg) scale(1.2);
+    fill: #1a1a1a;
+}
+
+/* Footer igual */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9em;
+    font-family: serif;
+    user-select: none;
+    margin-top: auto;
+}
+
+.participantes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.participante {
+    line-height: 1.3em;
+    color: #f0e6d2;
+}
+
+.participante strong {
+    display: block;
+    color: #d3b97d;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #000;
+}
